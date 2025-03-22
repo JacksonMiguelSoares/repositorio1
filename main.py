@@ -2,10 +2,10 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-#uvicorn main:app --reload --port 8080
-@app.get("/")
+@app.get("/helloword")
 async def root():
     return {"message": "Te amo"}
-@app.get("/nat")
+
+@app.get("/funcaoteste")
 async def testenati():
     return {"message": "funciona graças a Deus"}
